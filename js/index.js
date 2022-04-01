@@ -1,2 +1,12 @@
-const primaryNav = document.querySelector("primary-navigation");
-const navToggle = document.querySelector("navbar-toggler");
+'use strict'
+const primaryNav = document.querySelector(".header__collapse");
+const navToggle = document.querySelector(".navbar-toggler");
+
+navToggle.addEventListener("click", () => {
+	const visibility = primaryNav.getAttribute("data-visible");
+	if (visibility === "false") {
+		primaryNav.setAttribute("data-visible", true);
+	} else if (visibility === "true") {
+		primaryNav.setAttribute("data-visible", false);
+	}
+});
