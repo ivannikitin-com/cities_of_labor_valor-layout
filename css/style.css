@@ -31,7 +31,6 @@
 
 body, html {  
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -46,6 +45,7 @@ body {
   background-color: var(--body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
 
 a {
@@ -94,23 +94,9 @@ dl {
   margin-left: auto;
 }
 
-.header__container {
-  position: relative;
-}
-
 .header {
+  position: relative;
   background: #fff;
-}
-
-.header__collapse {
-  position: absolute;
-  background: var(--blue);
-  top: 100%;
-  left: 0;
-  right: 0;
-  padding: 12px 10px;
-  visibility: hidden;
-  z-index: 100;
 }
 
 .header__navbar {
@@ -208,10 +194,6 @@ dl {
 .fade:not(.show) {
   opacity: 0;
 }
-/* 
-.collapse:not(.show) {
-  display: none;
-} */
 
 .collapsing {
   height: 0;
@@ -299,34 +281,6 @@ dl {
   transform: translateY(-3px) rotate(-90deg);
 }
 
-
-.navbar-expand {
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-}
-
-.navbar-expand .navbar-nav {
-  flex-direction: row;
-}
-
-.navbar-expand .navbar-nav .nav-link {
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-}
-
-.navbar-expand .navbar-nav-scroll {
-  overflow: visible;
-}
-
-.navbar-expand .navbar-collapse {
-  display: flex !important;
-  flex-basis: auto;
-}
-
-.navbar-expand .navbar-toggler {
-  display: none;
-}
-
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.55);
 }
@@ -384,7 +338,6 @@ dl {
   }
 
   .header__collapse {
-    position: static;
     background: #fff;
     padding: 0;
   }
@@ -421,11 +374,6 @@ dl {
     flex-direction: row;
   }
 
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  }
-
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
@@ -445,6 +393,15 @@ dl {
 
 @media (max-width: 991.98px) {
   .header__collapse {
+    background: var(--blue);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 12px 10px;
+    width: 100%;
+    overflow-y: auto;
+    visibility: hidden;
     transform: translateX(100%);
     transition: transform .3s ease-in-out,
     visibility .3s ease-in-out;
@@ -452,6 +409,7 @@ dl {
 
   .header__collapse[data-visible="true"] {
     transform: translateX(0%);
+    visibility: visible;
   }
 
   .main-menu__item {
