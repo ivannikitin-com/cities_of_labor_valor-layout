@@ -194,12 +194,12 @@ dl {
 .fade:not(.show) {
   opacity: 0;
 }
-
+/* 
 .collapsing {
   height: 0;
   overflow: hidden;
   transition: height 0.35s ease;
-}
+} */
 
 .navbar-collapse {
   flex-basis: 100%;
@@ -216,79 +216,11 @@ dl {
   border: 0;
 }
 
-.open .navbar-toggler {
-  transform: rotate(45deg);
-}
 
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     transition: none;
   }
-}
-
-.navbar-toggler:hover {
-  text-decoration: none;
-}
-
-.navbar-toggler:focus {
-  text-decoration: none;
-  outline: 0;
-  border: 0;
-  /* box-shadow: 0 0 0 0.25rem; */
-}
-
-.navbar-toggler:focus .navbar-toggler-icon,
-.navbar-toggler:focus .navbar-toggler-icon::before,
-.navbar-toggler:focus .navbar-toggler-icon::after {
-  background-color: var(--red);
-}
-
-.navbar-toggler-icon {
-  display: block;
-  background: var(--blue);
-  height: 3px;
-  width: 30px;
-  transition: all ease-in-out 500ms;
-}
-
-.open .navbar-toggler-icon {
-  transform: rotate(45deg);
-}
-
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after {
-  content: '';
-  display: block;
-  background: var(--blue);
-  height: 3px;
-  width: 30px;
-  transition: all ease-in-out 500ms;
-}
-
-.navbar-toggler-icon::before {
-  transform: translateY(-8px);
-}
-
-.navbar-toggler-icon::after {
-  transform: translateY(5px);
-}
-
-.open .navbar-toggler-icon::before {
-  opacity: 0;
-}
-
-.open .navbar-toggler-icon::after {
-  transform: translateY(-3px) rotate(-90deg);
-}
-
-.navbar-light .navbar-text {
-  color: rgba(0, 0, 0, 0.55);
-}
-
-.navbar-light .navbar-text a,
-.navbar-light .navbar-text a:hover,
-.navbar-light .navbar-text a:focus {
-  color: rgba(0, 0, 0, 0.9);
 }
 
 .main {
@@ -421,4 +353,59 @@ dl {
     text-decoration: underline;
     color: #fff;
   }
+
+  .navbar-toggler:hover {
+    text-decoration: none;
+  }
+  
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+  }
+  
+  .navbar-toggler:focus .navbar-toggler-icon,
+  .navbar-toggler:focus .navbar-toggler-icon::before,
+  .navbar-toggler:focus .navbar-toggler-icon::after {
+    background-color: var(--red);
+  }
+  
+  .navbar-toggler-icon {
+    display: block;
+    background: var(--blue);
+    height: 3px;
+    width: 30px;
+    transition: all ease-in-out 200ms;
+  }
+  
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: '';
+    display: block;
+    background: var(--blue);
+    height: 3px;
+    width: 30px;
+    transition: all ease-in-out 200ms;
+  }
+  
+  .navbar-toggler-icon::before {
+    transform: translateY(-8px);
+  }
+  
+  .navbar-toggler-icon::after {
+    transform: translateY(5px);
+  }
+
+  .navbar-toggler[aria-expanded="true"] {
+    transform: rotate(45deg);
+  }
+  
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    opacity: 0;
+  }
+  
+   .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: translateY(-3px) rotate(-90deg);
+  }
+
 }
