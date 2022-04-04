@@ -328,19 +328,20 @@ dl {
     background: var(--blue);
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
+    /* left: 0; */
+    /* right: 0; */
+    left:100%;
     padding: 12px 10px;
     width: 100%;
     overflow-y: auto;
     visibility: hidden;
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
     transition: transform .3s ease-in-out,
     visibility .3s ease-in-out;
   }
 
   .header__collapse[data-visible="true"] {
-    transform: translateX(0%);
+    transform: translateX(-100%);
     visibility: visible;
   }
 
