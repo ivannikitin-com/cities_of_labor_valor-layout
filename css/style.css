@@ -353,7 +353,7 @@ dl {
 
 .main {
   flex-shrink: 0;
-  padding-bottom: 9.2%;
+  padding-bottom: 9%;
 }
 
 .news {
@@ -700,4 +700,10 @@ dl {
     margin-bottom: 2px;
   }
 
+}
+
+@media (max-width: 767.98px) {
+  .news__col-first {  
+    padding-bottom: calc(2.2rem + 4vw);
+  }
 }
