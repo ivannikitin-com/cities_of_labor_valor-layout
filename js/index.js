@@ -14,4 +14,12 @@ navToggle.addEventListener("click", () => {
 	}
 });
 
-// document.querySelector().
+// let countColor = document.querySelector('.search-results__item::before');
+
+// countColor.addEventListener('mouseover', () => {
+//     countColor.style.color = `#green`;
+// });
+
+// countColor.addEventListener('mouseleave', () => {
+//     countColor.style.color = "#000";
+// });
