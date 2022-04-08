@@ -65,19 +65,22 @@
 	</header>
 
 	<main class="main">
-		<div class="container">
-			<div class="search-page">
+		<div class="search-page">
+			<div class="search-page__container container">
 				<div class="search-page__header">
 					<h1 class="search-page__title">Поиск:</h1>
-					<form class="search-page__form" action="">
+					<form class="search-page__form" action="" novalidate>
 						<div class="search-page__form-wrap">
 							<input class="search-page__input form-control" type="search" required="required"
 								placeholder="Введите запрос">
-							<svg class="search-page__icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 512 512" width="19" height="19" xml:space="preserve">
-								<path
-									d="M500.3 443.7 380.6 324c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.72 99.01-15.51-15.51 99.01 1.72 235.2c11.6 91.64 86.08 166.7 177.6 178.9 53.8 7.19 104.3-6.24 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0 15.61-15.64 15.61-41.04.01-56.64zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128-57.42 128-128 128-128-57.4-128-128z" />
-							</svg>
+							<button class="search-page__button-submit" type="submit">
+								<svg class="search-page__icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512" width="19" height="19" xml:space="preserve">
+									<path
+										d="M500.3 443.7 380.6 324c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.72 99.01-15.51-15.51 99.01 1.72 235.2c11.6 91.64 86.08 166.7 177.6 178.9 53.8 7.19 104.3-6.24 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0 15.61-15.64 15.61-41.04.01-56.64zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128-57.42 128-128 128-128-57.4-128-128z" />
+								</svg>
+							</button>
+
 						</div>
 					</form>
 				</div>
@@ -92,12 +95,7 @@
 								<a class="search-results__link" href="#"><b>Ключевое слово</b>, выпавшее по запросу</a>
 								<div class="search-results__txt">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-										labore...
-										Lorem ipsum dolor
-										sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore... Lorem ipsum
-										dolor
-										sit amet,
-										consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
+										labore...</p>
 									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo rerum harum, ab corporis alias
 										eveniet cumque iste voluptates est quia. Culpa odio nihil nisi quis dicta sequi eveniet incidunt
 										repellat.</p>
@@ -175,103 +173,17 @@
 							</div>
 						</li>
 
-						<li class="search-results__item">
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#"><b>Ключевое слово</b>, выпавшее по запросу txt text txt
-									fffffffffffff</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-								</div>
+						<div class="search-page__pagenavi">
+							<div class="wp-pagenavi" role="navigation">
+								<a class="first" aria-label="First Page" href="/">&lt;&lt;</a>
+								<a class="previouspostslink" rel="prev" aria-label="Предыдущая страница" href="#">&lt;</a>
+								<span aria-current="page" class="current">2</span><a class="page larger" title="Страница 18"
+									href="#">4</a>
+								<span class="extend">...</span><a class="page smaller" title="Страница 16" href="#">16</a>
+								<a class="nextpostslink" rel="next" aria-label="Следующая страница" href="#">&gt;</a>
+								<a class="last" aria-label="Last Page" href="#">&gt;&gt;</a>
 							</div>
-						</li>
-
-						<li class="search-results__item">
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#">Здесь тоже <b>ключевое слово</b> по запросу</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-								</div>
-							</div>
-						</li>
-						<li class="search-results__item">
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#"><b>Ключевое слово</b>, выпавшее по запросу</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-										labore...
-										Lorem ipsum dolor
-										sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore... Lorem ipsum
-										dolor
-										sit amet,
-										consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo rerum harum, ab corporis alias
-										eveniet cumque iste voluptates est quia. Culpa odio nihil nisi quis dicta sequi eveniet incidunt
-										repellat.</p>
-								</div>
-							</div>
-						</li>
-
-						<li class="search-results__item">
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#"><b>Ключевое слово</b>, выпавшее по запросу txt text txt</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-								</div>
-							</div>
-						</li>
-
-						<li class="search-results__item">
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#">Здесь тоже <b>ключевое слово</b> по запросу</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-								</div>
-							</div>
-						</li>
-						<li class="search-results__item">
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#"><b>Ключевое слово</b>, выпавшее по запросу</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-										labore...
-										Lorem ipsum dolor
-										sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore... Lorem ipsum
-										dolor
-										sit amet,
-										consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo rerum harum, ab corporis alias
-										eveniet cumque iste voluptates est quia. Culpa odio nihil nisi quis dicta sequi eveniet incidunt
-										repellat.</p>
-								</div>
-							</div>
-						</li>
-
-						<li class="search-results__item">
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#"><b>Ключевое слово</b>, выпавшее по запросу txt text txt</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-								</div>
-							</div>
-						</li>
-
-						<li class="search-results__item">
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#">Здесь тоже <b>ключевое слово</b> по запросу</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-								</div>
-							</div>
-						</li>
-					</ul>
-
-					<div class="wp-pagenavi" role="navigation">
-						<a class="previouspostslink" rel="prev" aria-label="Предыдущая страница" href="#">&nbsp;</a>
-						<a class="page smaller" title="Страница 1" href="#">1</a><span aria-current="page"
-							class="current">2</span><a class="page larger" title="Страница 3" href="#">3</a><span
-							class="extend">...</span><a class="nextpostslink" rel="next" aria-label="Следующая страница"
-							href="#">&nbsp;</a><a class="last" aria-label="Last Page" href="#">284</a>
-					</div>
+						</div>
 				</div>
 			</div>
 		</div>
