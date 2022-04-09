@@ -156,6 +156,12 @@ strong {
   font-weight: bold;
 }
 
+
+ol,
+ul {
+  padding-left: 2rem;
+}
+
 ol,
 ul,
 dl {
@@ -422,7 +428,7 @@ textarea {
 
 .navbar-toggler {
   order: -1;
-  padding: 1em;
+  padding: 1em 0;
   cursor: pointer;
   line-height: 1;
   background-color: transparent;
@@ -601,8 +607,14 @@ textarea {
   color: var(--blue);
   background: none;
   padding: 0;
+  outline: 0;
 }
 
+.search-form__button-submit:focus,
+.search-form__button-submit:focus svg {
+  color: var(--red);
+}
+ 
 .cities__button-submit {
   right: 20px;
 }
@@ -746,8 +758,14 @@ textarea {
   padding: 14px 34px 14px 14px;
 }
 
+.cities__list {
+  margin-top: 4%;
+}
+
 .cities__list-ul {
   list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
 .cities__list li { 
@@ -764,6 +782,10 @@ textarea {
   display: block;
   padding-bottom: 0.8rem;
   text-decoration: none;
+}
+
+.cities__list-link:focus {
+  text-decoration: underline;
 }
 
 .footer {
@@ -1014,6 +1036,10 @@ textarea {
   .search-page__subtitle {
     padding-top: 15px;
     margin-bottom: 60px;
+  }
+    
+  .cities__list {
+    margin-top: 52px;
   }
 }
 
