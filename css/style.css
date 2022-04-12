@@ -652,17 +652,14 @@ textarea {
 
 .search-results__item {
   display: flex;
-  counter-increment: listCounter;
   font-size: 1.125rem;
   margin-bottom: 0.6rem;
 }
 
-.search-results__item::before {
+.search-results__serial-num {
   font-family: 'MontserratBold';
-  content: counter(listCounter) '. ';
   color: var(--blue);
   font-weight: bold;
-  flex-shrink: 0;
   margin-right: 8px;
 }
 
