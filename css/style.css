@@ -125,6 +125,12 @@ h6,
   font-size: 1rem;
 } */
 
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
 a {
   color: var(--blue);
   text-decoration: underline;
@@ -147,7 +153,7 @@ a:not([href]):not([class]):hover {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
 
 b,
@@ -165,6 +171,11 @@ ol,
 ul,
 dl {
   margin-top: 0;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 .btn {
@@ -483,10 +494,6 @@ textarea {
   font-weight: bold;
 }
 
-.news__img-wrap {
-  text-align: center;
-}
-
 .news__img-wrap + .news__date {
   margin-top: 16px;
   line-height: 1;
@@ -515,6 +522,26 @@ textarea {
   word-break: break-word;
   display: inline-block;
   margin-top: 0.5rem;
+}
+
+.news__link {
+  text-decoration: none;
+  font-family: "MontserratBold";
+  font-weight: bold;
+  color: var(--black);
+  display: inline;
+  padding-bottom: 0.25em;
+  background: linear-gradient(to right, currentColor 0%, currentColor 98%);
+  background-size: 0px 1px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left 85%;
+  transition: 0.25s;
+}
+
+.news__link:hover,
+.news__link:focus {
+  background-size: 100% 1px;
 }
 
 .news__load-more {
@@ -786,6 +813,33 @@ textarea {
   text-decoration: underline;
 }
 
+.single__main {
+  padding-top: 80px;
+}
+
+.single__title {
+  margin-bottom: 0.8rem;
+}
+
+.single__img-wrap {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.single__content {
+  margin-top: -0.09rem;
+  margin-bottom: 9.7%;
+  padding-bottom: 2rem;
+}
+
+.single__txt {
+  margin-top: 3.9%;
+}
+
+.single__other-news-title {
+  padding-bottom: calc(1.5rem + 1vw);
+}
+
 .footer {
   margin-top: auto;
   background-color: var(--blue);
@@ -803,6 +857,8 @@ textarea {
   font-weight: bold;
   line-height: normal;
 }
+
+/*media queries*/
 
 @media (min-width: 420px) {
   .container-smm {
@@ -864,6 +920,10 @@ textarea {
 }
 
 @media (min-width: 768px) {
+  .float-md-start {
+    float: left !important;
+  }
+
   .container-smm {
     max-width: 100%;
   }
@@ -896,6 +956,14 @@ textarea {
   .news__item {
     flex: 0 0 auto;
     width: 50%;
+  }
+
+  .single__other-news-title {
+    padding-bottom: 44px;
+  }
+
+  .single__txt {
+    margin-top: 1.8rem;
   }
 
   .search-page__header {
@@ -945,6 +1013,10 @@ textarea {
   .col-lg-9 {
     flex: 0 0 auto;
     width: 75%;
+  }
+
+  .float-lg-start {
+    float: left !important;
   }
 
   .logo--lg {
@@ -1037,6 +1109,14 @@ textarea {
 
   .cities__list {
     margin-top: 52px;
+  }
+
+  .single__title {
+    transform: translateY(-4px);
+  }
+
+  .single__img-wrap {
+    margin-right: 30px;
   }
 }
 
