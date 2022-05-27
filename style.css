@@ -840,50 +840,6 @@ textarea {
   padding-bottom: calc(1.5rem + 1vw);
 }
 
-.city__subtitle,
-.city__subtitle {
-  color: #000;
-}
-
-.city__header--has-image .city__title,
-.city__header--has-image .city__subtitle {
-  color: #fff;
-}
-
-.city__wrap {
-  position: relative;
-  background-position: 50% 0%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 406px;
-  padding-bottom: 30px;
-}
-
-.city__header--has-image .city__wrap::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.65);
-  z-index: 1;
-}
-
-.city__header-content {
-  position: relative;
-  padding-top: 9%;
-  z-index: 2;
-}
-
-.city__title {
-  font-family: "MontserratBold";
-  font-weight: bold;
-  font-size: 1.9rem;
-  margin-bottom: 1rem;
-}
-
 .footer {
   margin-top: auto;
   background-color: var(--blue);
@@ -1065,8 +1021,6 @@ textarea {
 
   .logo--lg {
     display: block;
-    flex: 0 0 auto;
-    width: 16.66666667%;
   }
 
   .logo img {
@@ -1085,19 +1039,16 @@ textarea {
 
   .main-menu__list {
     display: flex;
-    flex-wrap: wrap;
     text-align: left;
     padding: 0;
   }
 
   .main-menu--one {
     margin-bottom: 0;
-    flex: 0 0 auto;
-    width: 41.66666667%;
   }
 
-  .main-menu__item:not(:last-child) {
-    margin-right: 15px;
+  .main-menu__item + .main-menu__item {
+    margin-left: 15px;
   }
 
   .main-menu__link {
@@ -1190,14 +1141,6 @@ textarea {
   h2,
   .h2 {
     font-size: 1.875rem;
-  }
-
-  .city__title {
-    font-size: 2.5rem;
-  }
-
-  .city__subtitle {
-    font-size: 2.25rem;
   }
 }
 

@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Городатрудовойдоблести</title>
+	<title>Город</title>
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -31,8 +31,7 @@
 						<ul class="main-menu__list">
 							<li class="main-menu__item"><a class="main-menu__link" href="">Города</a></li>
 							<li class="main-menu__item"><a class="main-menu__link" href="">Документы</a></li>
-							<li class="main-menu__item"><a class="main-menu__link main-menu__link--current" href="">Новости городов
-									трудовой доблести</a></li>
+							<li class="main-menu__item"><a class="main-menu__link main-menu__link--current" href="">Новости</a></li>
 							<li class="main-menu__item"><a class="main-menu__link" href="">Календарь</a></li>
 						</ul>
 					</div>
@@ -66,33 +65,30 @@
 	</header>
 
 	<main class="main">
-		<div class="home-slider">
-			<img class="home-slider__img" src="/images/slide-1.jpg" width="" height="" alt="">
+		<!-- /*С фоновой картинкой*/ -->
+		<div class="city__header city__header--has-image">
+			<div class="city__wrap" style="background-image: url(./images/slide-2.jpg)">
+				<div class="city__container container">
+					<div class="city__header-content">
+						<h1 class="city__title title">Заголовок</h1>
+						<h2 class="city__subtitle">Подзаголовок</h2>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="container">
-			<h1>Sticky footer with fixed navbar</h1>
-			<p>Город трудовой доблести — почётное звание Российской Федерации, установленное федеральным законом от 1 марта
-				2020 года
-				«в целях увековечения подвига тружеников тыла во время Великой Отечественной войны 1941—1945 годов».
-				Присваивается
-				городам Российской Федерации, жители которых «внесли значительный вклад в достижение Победы в Великой
-				Отечественной
-				войне 1941—1945 годов, обеспечив бесперебойное производство военной и гражданской продукции на промышленных
-				предприятиях, располагавшихся на территории города, и проявив при этом массовый трудовой героизм и
-				самоотверженность».</p>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel aliquam impedit optio aut numquam ab quae, minus
-				excepturi cum, at quos qui labore? Voluptas fuga rerum vel cupiditate iure tenetur.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel perferendis quod aperiam vitae! Sequi
-				odit incidunt qui amet nesciunt dolore nam error cumque! Fugit pariatur tenetur blanditiis labore adipisci.</p>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel aliquam impedit optio aut numquam ab quae, minus
-				excepturi cum, at quos qui labore? Voluptas fuga rerum vel cupiditate iure tenetur.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel perferendis quod aperiam vitae! Sequi
-				odit incidunt qui amet nesciunt dolore nam error cumque! Fugit pariatur tenetur blanditiis labore adipisci.</p>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel aliquam impedit optio aut numquam ab quae, minus
-				excepturi cum, at quos qui labore? Voluptas fuga rerum vel cupiditate iure tenetur.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel perferendis quod aperiam vitae! Sequi
-				odit incidunt qui amet nesciunt dolore nam error cumque! Fugit pariatur tenetur blanditiis labore adipisci.</p>
+		<!-- /* Без фоновой картинки */ -->
+		<div class="city__header">
+			<div class="city__wrap">
+				<div class="city__container container">
+					<div class="city__header-content">
+						<h1 class="city__title title">Заголовок</h1>
+						<h2 class="city__subtitle">Подзаголовок</h2>
+					</div>
+				</div>
+			</div>
 		</div>
+
+		</h1>
 	</main>
 
 	<footer class="footer">
@@ -102,6 +98,7 @@
 	</footer>
 
 	<script src="js/index.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
 </body>
 
 </html>
