@@ -550,7 +550,8 @@ textarea {
   margin-top: 25px;
 }
 
-.tag-cloud__title {
+.tag-cloud__title,
+.widget-title {
   font-family: "MontserratBold";
   font-size: 1rem;
   font-weight: bold;
