@@ -884,6 +884,18 @@ textarea {
   margin-bottom: 1rem;
 }
 
+.search-page__header.search-page__header--404 {
+  padding: 57px 0 42px;
+}
+
+.notfound__txt {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.5556;
+  color: #000;
+  margin-bottom: 3rem;
+}
+
 .footer {
   margin-top: auto;
   background-color: var(--blue);
@@ -1059,6 +1071,10 @@ textarea {
     width: 75%;
   }
 
+  .offset-lg-2 {
+    margin-left: 16.66666667%;
+  }
+
   .float-lg-start {
     float: left !important;
   }
@@ -1149,6 +1165,13 @@ textarea {
   .search-page__title {
     padding-bottom: 56px;
     font-size: 2.5rem;
+  }
+
+  .search-page__title--404 {
+    font-family: "MontserratBold";
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .search-page__subtitle {

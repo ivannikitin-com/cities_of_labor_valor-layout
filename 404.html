@@ -67,8 +67,19 @@
 	<main class="main">
 		<div class="search-page">
 			<div class="search-page__container container">
-				<div class="search-page__header">
-					<h1 class="search-page__title">Поиск:</h1>
+				<div class="search-page__header search-page__header--404">
+					<h1 class="search-page__title search-page__title--404">404</h1>
+					<div class="col-lg-8 offset-lg-2">
+						<div class="notfound">
+							<div class="notfound__txt">
+								<p>Извините, страница не найдена. Попробуйте воспользоваться нашим поиском, или вернитесь <a href="/">на
+										главную страницу</a></p>
+							</div>
+
+						</div>
+
+					</div>
+
 					<form class="search-page__search-form search-form" action="" novalidate>
 						<div class="search-page__form-wrap form-wrap">
 							<input class="search-page__input search-form__input form-control" type="search" required="required"
@@ -83,115 +94,6 @@
 
 						</div>
 					</form>
-				</div>
-
-
-				<div class="search-page__results search-results">
-					<h2 class="search-page__subtitle h2">Результаты поиска:</h2>
-					<ul class="search-results__list">
-
-						<li class="search-results__item">
-							<span class="search-results__serial-num">1.</span>
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#"><b>Ключевое слово</b>, выпавшее по запросу</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-										labore...</p>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo rerum harum, ab corporis alias
-										eveniet cumque iste voluptates est quia. Culpa odio nihil nisi quis dicta sequi eveniet incidunt
-										repellat.</p>
-								</div>
-							</div>
-						</li>
-
-						<li class="search-results__item">
-							<span class="search-results__serial-num">2.</span>
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#"><b>Ключевое слово</b>, выпавшее по запросу txt text txt</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-								</div>
-							</div>
-						</li>
-
-						<li class="search-results__item">
-							<span class="search-results__serial-num">3.</span>
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#">Здесь тоже <b>ключевое слово</b> по запросу</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-								</div>
-							</div>
-						</li>
-						<li class="search-results__item">
-							<span class="search-results__serial-num">4.</span>
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#"><b>Ключевое слово</b>, выпавшее по запросу</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-										labore...
-										Lorem ipsum dolor
-										sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore... Lorem ipsum
-										dolor
-										sit amet,
-										consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo rerum harum, ab corporis alias
-										eveniet cumque iste voluptates est quia. Culpa odio nihil nisi quis dicta sequi eveniet incidunt
-										repellat.</p>
-								</div>
-							</div>
-						</li>
-
-						<li class="search-results__item">
-							<span class="search-results__serial-num">5.</span>
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#"><b>Ключевое слово</b>, выпавшее по запросу txt text txt</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-								</div>
-							</div>
-						</li>
-
-						<li class="search-results__item">
-							<span class="search-results__serial-num">6.</span>
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#">Здесь тоже <b>ключевое слово</b> по запросу</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-								</div>
-							</div>
-						</li>
-						<li class="search-results__item">
-							<span class="search-results__serial-num">7.</span>
-							<div class="search-results__wrap-txt">
-								<a class="search-results__link" href="#"><b>Ключевое слово</b>, выпавшее по запросу</a>
-								<div class="search-results__txt">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-										labore...
-										Lorem ipsum dolor
-										sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore... Lorem ipsum
-										dolor
-										sit amet,
-										consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo rerum harum, ab corporis alias
-										eveniet cumque iste voluptates est quia. Culpa odio nihil nisi quis dicta sequi eveniet incidunt
-										repellat.</p>
-								</div>
-							</div>
-						</li>
-
-						<div class="search-page__pagenavi">
-							<div class="wp-pagenavi" role="navigation">
-								<a class="first" aria-label="First Page" href="/">&lt;&lt;</a>
-								<a class="previouspostslink" rel="prev" aria-label="Предыдущая страница" href="#">&lt;</a>
-								<span aria-current="page" class="current">2</span><a class="page larger" title="Страница 18"
-									href="#">4</a>
-								<span class="extend">...</span><a class="page smaller" title="Страница 16" href="#">16</a>
-								<a class="nextpostslink" rel="next" aria-label="Следующая страница" href="#">&gt;</a>
-								<a class="last" aria-label="Last Page" href="#">&gt;&gt;</a>
-							</div>
-						</div>
-					</ul>
 				</div>
 			</div>
 		</div>
