@@ -485,7 +485,6 @@ textarea {
 }
 
 .news__item {
-  /* margin-bottom: 55px; */
   margin-bottom: 6.67%;
 }
 
@@ -514,6 +513,11 @@ textarea {
   margin-top: 0.5rem;
 }
 
+.news__txt--sidebar {
+  font-size: 0.75rem;
+  line-height: 1.6667;
+}
+
 .news__txt p:last-child {
   margin-bottom: 0;
 }
@@ -539,6 +543,10 @@ textarea {
   transition: 0.25s;
 }
 
+.news__link--sidebar {
+  color: var(--blue);
+}
+
 .news__link:hover,
 .news__link:focus {
   background-size: 100% 1px;
@@ -550,6 +558,10 @@ textarea {
   margin-top: 25px;
 }
 
+.news__wrap--sidebar {
+  margin: 2rem 0 0 0;
+}
+
 .tag-cloud__title,
 .widget-title {
   font-family: "MontserratBold";
@@ -558,7 +570,7 @@ textarea {
   line-height: 1.25;
   color: var(--black);
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
 }
 
 .tag-cloud__list {
