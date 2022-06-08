@@ -863,7 +863,7 @@ textarea {
   color: #fff;
 }
 
-.city__wrap {
+.city__header--has-image .city__wrap {
   position: relative;
   background-position: 50% 0%;
   background-repeat: no-repeat;
